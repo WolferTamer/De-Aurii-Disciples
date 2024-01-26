@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "auriidisciples",
+	"version": "${version}",
+	"name": "De Aurii Disciples",
+	"description": "This is a mod that implements a new progression system into the game. This utilizes various gods within the Aura De Aurii cannon, with each one providing different perks",
+	"authors": [
+		"WolferTamer"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/auriidisciples/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wolfertamer.auriidisciples.DeAuriiDisciples"
+		],
+		"client": [
+			"net.wolfertamer.auriidisciples.DeAuriiDisciplesClient"
+		],
+		"fabric-datagen": [
+			"net.wolfertamer.auriidisciples.DeAuriiDisciplesDataGenerator"
+		]
+	},
+	"mixins": [
+		"auriidisciples.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
